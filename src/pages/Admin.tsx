@@ -7,7 +7,7 @@ type Tab = 'tables' | 'menu';
 
 const Admin = () => {
   const [activeTab, setActiveTab] = useState<Tab>('tables');
-  const baseUrl = window.location.origin;
+  const baseUrl = window.location.origin || import.meta.env.VITE_PUBLIC_URL;
 
   return (
     <div className="min-h-screen bg-background">

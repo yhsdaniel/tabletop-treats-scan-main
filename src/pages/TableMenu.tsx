@@ -55,7 +55,7 @@ const TableMenu = () => {
           <h2 className="text-base font-bold text-foreground mb-2">⭐ Populer</h2>
           <div className="flex gap-3 overflow-x-auto scrollbar-hide pb-1">
             {popular.map(item => (
-              <div key={item.id} className="min-w-[160px]">
+              <div key={item.id} className="max-w-[350px]">
                 <MenuCard item={item} />
               </div>
             ))}

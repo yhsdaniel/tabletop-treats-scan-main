@@ -40,7 +40,7 @@ const MenuCard = ({ item }: { item: MenuItem }) => {
           <p className="text-[11px] text-muted-foreground mt-0.5 line-clamp-2">{item.description}</p>
         </div>
 
-        <div className="flex items-center justify-between mt-2">
+        <div className="flex items-center justify-between mt-2 gap-1.5">
           <span className="text-sm font-bold text-primary">{formatRupiah(item.price)}</span>
 
           {item.isAvailable && (
